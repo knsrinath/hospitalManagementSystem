@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hospital Management System</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Main Bar -->
+  <div class="topnav">
+    <a class="logo" href="./index.html">Hospital Management System</a>
+    <a onclick="document.getElementById('id01').style.display='block'">Log In/Sign Up</a>
+  </div>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Department 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Ortho</a>
+        <a>ENT</a>
+        <a>Eye</a>
+        <a>Cardiology</a>
+        <a>X-Ray</a>
+        <a>Blood</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Emergency 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a>Accident</a>
+        <a>Burn</a>
+      </div>
+    </div>
+    <a class="tablinks" onclick="openTab(event, 'bookAppointment')">Book Appointment</a>
+    <a class="tablinks" onclick="openTab(event, 'doctors')">Doctors</a>
+    <a >My Account</a>
+  </div>
+  <!-- tab section -->
+  <!-- Book Appointment -->
+  <div id="bookAppointment" class="tabcontent">
+    <form action="./appointment.php">
+      <table>
+        <tr>
+          <td><label for="patientName">Patient Name:</label></td>
+          <td><input type="text" name="" id="patientName"></td>
+        </tr>
+        <tr>
+          <td><label for="prblm">Name of Disease/Problem:</label></td>
+          <td><input type="text" name="" id="prblm"></td>
+        </tr>
+        <tr>
+          <td><label for="time">Time Allocated:</label></td>
+          <td><input type="text" name="" id="time"></td>
+        </tr>
+        <tr>
+          <td><label for="fee">Fee:</label></td>
+          <td><input type="text" name="" id="fee"></td>
+        </tr>
+      </table>
+      <input type="submit">
+    </form>
+  </div>
+  <!-- Doctors Tab -->
+  <div id="doctors" class="tabcontent">
+    <table>
+      <tr>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h1>John</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h1>Xavier</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h1>John Doe</h1>
+            <p class="title">CEO & Founder, Example</p>
+            <p>Harvard University</p>
+            <div style="margin: 24px 0;">
+              <a href="#"><i class="fa fa-dribbble"></i></a> 
+              <a href="#"><i class="fa fa-twitter"></i></a>  
+              <a href="#"><i class="fa fa-linkedin"></i></a>  
+              <a href="#"><i class="fa fa-facebook"></i></a> 
+            </div>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- Login Form -->
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="./assets/images/avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  <!-- Java Script -->
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
