@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="openTab(event, 'main')">
   <!-- Main Bar -->
   <div class="topnav">
     <a class="logo" href="./index.html">Hospital Management System</a>
@@ -42,6 +42,9 @@
     <a class="tablinks" onclick="openTab(event, 'bookAppointment')">Book Appointment</a>
     <a class="tablinks" onclick="openTab(event, 'doctors')">Doctors</a>
     <a >My Account</a>
+  </div>
+  <div class="tabcontent" id="main">
+    <h3>Hello, Welcome to HMS!</h3>
   </div>
   <!-- tab section -->
   <!-- Book Appointment -->

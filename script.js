@@ -12,12 +12,6 @@
         evt.currentTarget.className += " active";
     }
 
-    function _highlight(x) {
-        if (x="doc") {
-        document.getElementById('doctors').className = "navActive"
-        }
-    }
-
     // Get the modal
     var modal = document.getElementById('id01');
 
