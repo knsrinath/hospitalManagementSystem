@@ -22,12 +22,12 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a>Ortho</a>
-        <a>ENT</a>
-        <a>Eye</a>
-        <a>Cardiology</a>
-        <a>X-Ray</a>
-        <a>Blood</a>
+        <a onclick="openTab(event, 'ortho')">Ortho</a>
+        <a onclick="openTab(event, 'ent')">ENT</a>
+        <a onclick="openTab(event, 'eye')">Eye</a>
+        <a onclick="openTab(event, 'cardio')">Cardiology</a>
+        <a onclick="openTab(event, 'xray')">X-Ray</a>
+        <a onclick="openTab(event, 'blood')">Blood</a>
       </div>
     </div>
     <div class="dropdown">
@@ -35,13 +35,13 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
-        <a>Accident</a>
-        <a>Burn</a>
+        <a onclick="openTab(event, 'accident')">Accident</a>
+        <a onclick="openTab(event, 'burn')">Burn</a>
       </div>
     </div>
     <a class="tablinks" onclick="openTab(event, 'bookAppointment')">Book Appointment</a>
     <a class="tablinks" onclick="openTab(event, 'doctors')">Doctors</a>
-    <a >My Account</a>
+    <a class="tablinks" onclick="openTab(event, 'myAccount')">My Account</a>
   </div>
   <div class="tabcontent" id="main">
     <h3>Hello, Welcome to HMS!</h3>
@@ -113,6 +113,37 @@
         </td>
       </tr>
     </table>
+  </div>
+  <!-- My Account -->
+  <div id="myAccount" class="tabcontent">
+    <h3>My Account</h3>
+  </div>
+  <!-- Extra Tabs -->
+  <div>
+    <div id="ortho" class="tabcontent">
+      <h3>ORTHO</h3>
+    </div>
+    <div id="ent" class="tabcontent">
+      <h3>ENT</h3>
+    </div>
+    <div id="eye" class="tabcontent">
+      <h3>Eye</h3>
+    </div>
+    <div id="cardio" class="tabcontent">
+      <h3>Cardiology</h3>
+    </div>
+    <div id="xray" class="tabcontent">
+      <h3>X-Ray</h3>
+    </div>
+    <div id="blood" class="tabcontent">
+      <h3>Blood</h3>
+    </div>
+    <div id="burn" class="tabcontent">
+      <h3>Burn</h3>
+    </div>
+    <div id="accident" class="tabcontent">
+      <h3>Accident</h3>
+    </div>
   </div>
   <!-- Login Form -->
   <div id="id01" class="modal">
