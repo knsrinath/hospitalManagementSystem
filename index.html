@@ -4,7 +4,8 @@
   <title>mediSTAR Hospitals</title>
   <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter&family=Open+Sans&family=Poppins&family=Righteous&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">  
@@ -19,8 +20,8 @@
   <!-- Navigation bar -->
   <div class="navbar">
     <div class="dropdown">
-      <button class="dropbtn">DEPARTMENTS
-        <i class="fa fa-caret-down"></i>
+      <button class="dropbtn"><i class="fa fa-list"></i> DEPARTMENTS
+        <i class="fa fa-angle-down"></i>
       </button>
       <div class="dropdown-content">
         <a onclick="openTab(event, 'ortho')">Orthopaedics</a>
@@ -32,17 +33,17 @@
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">EMERGENCY 
-        <i class="fa fa-caret-down"></i>
+      <button class="dropbtn"><i class="fa fa-exclamation"></i> EMERGENCY 
+        <i class="fa fa-angle-down"></i>
       </button>
       <div class="dropdown-content">
         <a onclick="openTab(event, 'accident')">Accident</a>
         <a onclick="openTab(event, 'burn')">Burn</a>
       </div>
     </div>
-    <a class="tablinks" onclick="openTab(event, 'bookAppointment')">Book Appointment</a>
-    <a class="tablinks" onclick="openTab(event, 'doctors')">Doctors</a>
-    <a class="tablinks" onclick="openTab(event, 'myAccount')">My Account</a>
+    <a class="tablinks" onclick="openTab(event, 'bookAppointment')"><i class="fa fa-phone"></i> Book Appointment</a>
+    <a class="tablinks" onclick="openTab(event, 'doctors')"><i class="fa fa-plus"></i> Doctors</a>
+    <a class="tablinks" onclick="openTab(event, 'myAccount')"><i class="fa fa-user"></i> My Account</a>
   </div>
   <!-- Main About -->
   <div class="tabcontent" id="main">
