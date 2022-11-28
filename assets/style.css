@@ -3,7 +3,7 @@
 body {
   background-color: #ddd;
   color: white;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   background-image: url(../assets/images/bg.webp);
   background-repeat: no-repeat;
@@ -100,7 +100,7 @@ body {
 .topnav marquee {
   float: right;
   background-color: black;
-  color: yellow;
+  color: gold;
   width: inherit;
   margin: 10px;
   padding: 4px 10px;
@@ -378,6 +378,7 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next {font-size: 11px}
 }
+
 
 
 
