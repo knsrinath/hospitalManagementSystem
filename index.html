@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans&family=Poppins&family=Righteous&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans&family=Poppins&family=Righteous&family=Staatliches&display=swap" rel="stylesheet"> 
 </head>
 <body onload="openTab(event, 'main')">
   <!-- Main Bar -->
@@ -43,6 +43,7 @@
     <a class="tablinks" onclick="openTab(event, 'doctors')">Doctors</a>
     <a class="tablinks" onclick="openTab(event, 'myAccount')">My Account</a>
   </div>
+  <!-- Main About -->
   <div class="tabcontent" id="main">
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -229,16 +230,25 @@
   <!-- Extra Tabs -->
   <div>
     <div id="ortho" class="tabcontent">
-      <h3>ORTHO</h3>
+      <div class="tabImgContainer">
+        <img src="./assets/images/ortho.webp" alt="Ortho" style="width:100%;">
+        <div class="centered">Orthopedics</div>
+      </div>
     </div>
     <div id="ent" class="tabcontent">
-      <h3>ENT</h3>
+      <div class="tabImgContainer">
+        <img src="./assets/images/ent.webp" alt="ENT" style="width:100%;">
+        <div class="centered">ENT</div>
+      </div>
     </div>
     <div id="eye" class="tabcontent">
       <h3>Eye</h3>
     </div>
     <div id="cardio" class="tabcontent">
-      <h3>Cardiology</h3>
+      <div class="tabImgContainer">
+        <img src="./assets/images/cardio.webp" alt="Cardiology" style="width:100%;">
+        <div class="centered">Cardiology</div>
+      </div>
     </div>
     <div id="xray" class="tabcontent">
       <h3>X-Ray</h3>
