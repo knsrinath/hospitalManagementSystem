@@ -25,17 +25,17 @@
 
 
 
-    // accordition
+    // Image Slide Show
     let slideIndex = 1;
-showSlides(slideIndex);
+    showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
 function showSlides(n) {
   let i;
