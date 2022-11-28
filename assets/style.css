@@ -97,6 +97,15 @@ body {
   cursor: pointer;
 }
 
+.topnav marquee {
+  float: right;
+  background-color: black;
+  color: yellow;
+  width: inherit;
+  margin: 10px;
+  padding: 4px 10px;
+}
+
 .topnav .logo {
   float: left;
   font-family: 'Righteous', cursive;
@@ -416,4 +425,8 @@ img {vertical-align: middle;}
   padding: 20px;
   /* background-color: rgba(0, 0, 0, 0); */
   color: white;
+}
+
+.twoColList {
+  columns: 2;
 }
