@@ -6,19 +6,19 @@
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Open+Sans&family=Poppins&family=Righteous&display=swap" rel="stylesheet"> 
 </head>
 <body onload="openTab(event, 'main')">
   <!-- Main Bar -->
   <div class="topnav">
-    <a class="logo" href="./index.html">Hospital Management System</a>
+    <a class="logo" href="./index.html">MedStar Hospitals</a>
     <a onclick="document.getElementById('id01').style.display='block'">Log In/Sign Up</a>
   </div>
   <!-- Navigation bar -->
   <div class="navbar">
     <div class="dropdown">
-      <button class="dropbtn">Department 
+      <button class="dropbtn">DEPARTMENT
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="dropdown">
-      <button class="dropbtn">Emergency 
+      <button class="dropbtn">EMERGENCY 
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
@@ -49,6 +49,7 @@
   <!-- tab section -->
   <!-- Book Appointment -->
   <div id="bookAppointment" class="tabcontent">
+    <h3>Book Appointment</h3>
     <form action="./appointment.php">
       <table>
         <tr>
@@ -73,41 +74,115 @@
   </div>
   <!-- Doctors Tab -->
   <div id="doctors" class="tabcontent">
-    <table>
+    <table style="margin: 5px;">
       <tr>
         <td>
           <div class="card">
             <img src="assets/images/avatar.png" alt="John" style="width:100%">
-            <h1>John</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>Harvard University</p>
+            <h4>Dr. Kamal Kishore Pandey</h4>
+            <p class="title">Pulmonologist</p>
+            <p>MBBS, MS</p>
             <p><button>Contact</button></p>
           </div>
         </td>
         <td>
           <div class="card">
             <img src="assets/images/avatar.png" alt="John" style="width:100%">
-            <h1>Xavier</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>Harvard University</p>
+            <h4>Dr. Dhirendra Singh</h4>
+            <p class="title">Cardiologist</p>
+            <p>MBBS, DA</p>
             <p><button>Contact</button></p>
           </div>
         </td>
         <td>
           <div class="card">
             <img src="assets/images/avatar.png" alt="John" style="width:100%">
-            <h1>John Doe</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>Harvard University</p>
+            <h4>Dr. Prof Col Shekhar Kashyap</h4>
+            <p class="title">Cardiologist</p>
+            <p>MBBS, DCP</p>
             <p><button>Contact</button></p>
           </div>
         </td>
         <td>
           <div class="card">
             <img src="assets/images/avatar.png" alt="John" style="width:100%">
-            <h1>John Doe</h1>
-            <p class="title">CEO & Founder, Example</p>
-            <p>Harvard University</p>
+            <h4>Dr. Sushil Kumar</h4>
+            <p class="title">Gastroenterologist</p>
+            <p>MS (Gold Medalist), MCh</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Ankit Kumar</h4>
+            <p class="title">Pediatrician</p>
+            <p>MBBS, MD, DM</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Naresh Agarwal</h4>
+            <p class="title">Dermatologist</p>
+            <p>MBBS, MS</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Saroj Dubey</h4>
+            <p class="title">Hematologist</p>
+            <p>MBBS, DCP</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Smita Malhotra</h4>
+            <p class="title">Neurologist</p>
+            <p>MD, DNB, FSCAI (USA)</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Jitendra Pal</h4>
+            <p class="title">Ophthalmologist</p>
+            <p>MBBS, MS, DNB</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Lakshmi Prasanna</h4>
+            <p class="title">Psychiatrist</p>
+            <p>MBBS, MS, MCh</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Harika</h4>
+            <p class="title">Dentist</p>
+            <p>MBBS, DA</p>
+            <p><button>Contact</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Kamala Devi</h4>
+            <p class="title">Urologist</p>
+            <p>MBBS, DEM, MRCEM</p>
             <p><button>Contact</button></p>
           </div>
         </td>
