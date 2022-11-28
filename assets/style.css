@@ -2,13 +2,14 @@
 
 body {
   background-color: #ddd;
-  color: black;
+  color: white;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   background-image: url(../assets/images/bg.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  background-size: 100%;
 }
 
 .navbar {
@@ -109,21 +110,25 @@ body {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   /* border-radius: 10px; */
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   transition: background-color 0.2s;
   cursor: default;
+  /* box-shadow: rgba(255, 0, 0, 1) 0px 48px 100px 0px; */
+  box-shadow: rgba(255, 0, 0, 0.4) 0px 1px 2px 0px, rgba(255, 0, 0, 0.4) 0px 1px 3px 1px;
 }
 
 .topnav .logo:hover {
   background-color: #ddd;
   color: black;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: rgba(255, 0, 0, 1) 0px 1px 2px 0px, rgba(255, 0, 0, 1) 0px 1px 3px 1px;
 }
 
 .tabcontent {
   display: none;
   padding: 0px 0px;
   border-top: none;
+  margin: 0;
 }
 
 .card {
@@ -133,10 +138,12 @@ body {
   text-align: center;
   font-family: arial;
   margin: 5px;
+  background-color: #ddd;
+  color: black;
 }
 
 .title {
-  color: grey;
+  color: #111;
   font-size: 18px;
 }
 
@@ -338,13 +345,13 @@ img {vertical-align: middle;}
   padding: 8px 12px;
   position: absolute;
   top: 0;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.5);
   border-bottom-right-radius: 10px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,1);
 }
 
 /* Fading animation */
@@ -391,8 +398,22 @@ img {vertical-align: middle;}
 }
 
 
+#about0 {
+  background-color: #0078c2;
+  margin: 0;
+  color: white;
+  padding: 30px;
+}
+
+
 #about1 {
   background-color: #ddd;
   padding: 20px;
   color: black
+}
+
+#about2 {
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0); */
+  color: white;
 }
