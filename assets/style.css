@@ -5,6 +5,10 @@ body {
   color: black;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  background-image: url(../assets/images/bg.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .navbar {
@@ -384,4 +388,11 @@ img {vertical-align: middle;}
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-family: 'Staatliches', sans-serif;
+}
+
+
+#about1 {
+  background-color: #ddd;
+  padding: 20px;
+  color: black
 }
