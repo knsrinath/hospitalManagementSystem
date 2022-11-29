@@ -14,7 +14,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #222;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #333;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
 }
 
@@ -101,7 +101,7 @@ body {
 .topnav marquee {
   float: right;
   background-color: black;
-  color: gold;
+  color: red;
   width: inherit;
   margin: 10px;
   padding: 4px 10px;
@@ -117,11 +117,13 @@ body {
   text-decoration: none;
   font-size: 18px;
   margin: 10px;
+  margin-left: 15px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   /* border-radius: 10px; */
   /* border: 1px solid #ddd; */
   transition: background-color 0.2s;
+  transition: transform .2s;
   cursor: default;
   /* box-shadow: rgba(255, 0, 0, 1) 0px 48px 100px 0px; */
   box-shadow: rgba(255, 0, 0, 0.4) 0px 1px 2px 0px, rgba(255, 0, 0, 0.4) 0px 1px 3px 1px;
@@ -132,6 +134,7 @@ body {
   color: black;
   /* border: 1px solid black; */
   box-shadow: rgba(255, 0, 0, 1) 0px 1px 2px 0px, rgba(255, 0, 0, 1) 0px 1px 3px 1px;
+  transform: scale(1.1);
 }
 
 .tabcontent {
@@ -338,6 +341,7 @@ img {vertical-align: middle;}
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
+  transition: transform .2s;
   border-radius: 0 50px 50px 0;
   user-select: none;
 }
@@ -362,6 +366,8 @@ img {vertical-align: middle;}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,1);
+  color: red;
+  transform: scale(1.4);
 }
 
 /* Fading animation */
@@ -431,4 +437,20 @@ img {vertical-align: middle;}
 
 .twoColList {
   columns: 2;
+}
+
+
+
+
+
+
+.icon {
+  width: 100%;
+  padding: 2px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  color: red;
 }
