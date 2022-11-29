@@ -205,6 +205,8 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  background-color: #ddd;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
 }
 
 /* Set a style for all buttons */
@@ -263,6 +265,7 @@ span.psw {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
   padding-top: 60px;
+  color:black
 }
 
 /* Modal Content/Box */
