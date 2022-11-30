@@ -51,6 +51,10 @@ body {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
 }
 
+.navbar a:hover {
+  cursor: pointer;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -75,6 +79,7 @@ body {
 .dropdown-content a:hover {
   background-color: #ddd;
   color: black;
+  cursor: pointer;
 }
 
 .dropdown:hover .dropdown-content {
