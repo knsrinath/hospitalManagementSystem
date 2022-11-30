@@ -323,7 +323,9 @@ h3,h4 {
 * {box-sizing: border-box}
 body {margin:0}
 .mySlides {display: none}
-img {vertical-align: middle;}
+img {
+  vertical-align: middle;
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -434,7 +436,7 @@ img {vertical-align: middle;}
 
 #about2 {
   padding: 20px;
-  /* background-color: rgba(0, 0, 0, 0); */
+  background-color: rgba(255, 255, 255, 0.2);
   color: white;
 }
 
@@ -456,4 +458,9 @@ img {vertical-align: middle;}
   justify-content: space-around;
   align-content: flex-start;
   color: red;
+}
+
+.img1 {
+  border-radius: 10px;
+  padding: 10px;
 }
