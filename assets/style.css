@@ -103,6 +103,10 @@ body {
   cursor: pointer;
 }
 
+.topnav a:hover {
+  text-decoration: underline;
+}
+
 .topnav marquee {
   float: right;
   background-color: black;
