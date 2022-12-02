@@ -151,6 +151,10 @@ body {
   padding: 0px 0px;
   border-top: none;
   margin: 0;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
 }
 
 .card {
