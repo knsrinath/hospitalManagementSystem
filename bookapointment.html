@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>mediSTAR Hospitals</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter&family=Open+Sans&family=Poppins&family=Righteous&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">  
+</head>
+<body onload="openTab(event, 'main')">
+  <!-- Main Bar -->
+  <div class="topnav">
+    <a class="logo" href="./index.html">mediSTAR</a>
+    <a onclick="document.getElementById('id01').style.display='block'">Log in/Sign up</a>
+    <marquee behavior="" direction="left"><b>100% fixed price packages | No Cost EMI & Insurance | 15+ year average doctor exp.</b></marquee>
+  </div>
+  <!-- Navigation bar -->
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa fa-list icon"></i> DEPARTMENTS
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a onclick="openTab(event, 'ortho')">Orthopaedics</a>
+        <a onclick="openTab(event, 'ent')">ENT</a>
+        <a onclick="openTab(event, 'eye')">Eye Clinic</a>
+        <a onclick="openTab(event, 'cardio')">Cardiology</a>
+        <a onclick="openTab(event, 'xray')">X-Ray</a>
+        <a onclick="openTab(event, 'blood')">Blood</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn"><i class="fa-solid fa-truck-medical icon"></i> EMERGENCY 
+        <i class="fa fa-angle-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a onclick="openTab(event, 'accident')"><i class="fa-solid fa-car-burst icon"></i> Accident</a>
+        <a onclick="openTab(event, 'burn')"><i class="fa-sharp fa-solid fa-fire icon"></i> Burn</a>
+      </div>
+    </div>
+    <a class="tablinks" onclick="openTab(event, 'bookAppointment')"><i class="fa fa-phone icon"></i> Book Appointment</a>
+    <a class="tablinks" onclick="openTab(event, 'doctors')"><i class="fa-sharp fa-solid fa-stethoscope icon"></i> Doctors</a>
+    <a style="float: right;" class="tablinks" onclick="openTab(event, 'myAccount')"><i class="fa fa-user icon"></i> My Account</a>
+  </div>
+  <!-- Main About -->
+  <div class="tabcontent" id="main">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="./assets/images/ac1.webp" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="./assets/images/ac2.webp" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="./assets/images/ac3.webp" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="./assets/images/ac4.webp" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="./assets/images/ac5.webp" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="./assets/images/ac6.webp" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div id="about0">
+      <h3>THE RIGHT DECISION FOR QUALITY CARE, THE HOSPITAL THAT YOU CAN <span style="color: yellow;">TRUST</span></h3>
+    </div>
+    <div id="about2">
+      <h3>WELCOME TO  <span style="color: red;background-color: white;padding: 4px;border-radius: 4px;">MEDISTAR</span> SPECIALITY HOSPITAL</h3>
+      <h4>Established in 2010</h4>
+      <p class="padContent"><b>Medistar Speciality</b> is one of the leading multi-specialty hospitals located at Malakpet, Hyderabad. Our team consists of highly experienced doctors, surgeons, medical professionals, and personnel who go above and beyond the call of duty to provide the best healthcare services. We live by the belief that - Every life matters. Our primary focus is to provide timely and quality treatment at affordable costs.</p>
+      <p class="padContent"><b>Medistar Speciality Hospital</b> was established in 2010 by <b>Dr. Sampath Kumar</b>, <b>Dr. Mahendra Kumar</b> and <b>Dr. Swathi</b>. They envisioned a hospital that would be patient-focused, but most importantly cater to improving the health and wellbeing of people. We started out as a 20-bed nursing home and have, today, grown to be a 100-bed multi-specialty hospital. With one of the best Trauma and Emergency Department, Laminar OTs, advanced imaging facilities, and fully equipped ICUs, we are committed to delivering high-quality patient care using the latest cutting-edge technologies.</p>
+      <p class="padContent">Some of our key specialties include Accident & Emergency Care, Cardiology, Orthopaedics, Neurology, ENT, Paediatrics, Nephrology, OBG-Gynaecology, Cosmetic Surgery, Diabetes & Endocrinology, Gastroenterology, Psychiatry, Diet & Nutrition, among others. We also offer special healthcare packages so you can monitor your health on a regular basis. At Medistar, the concept of caring and revolution combined with state-of-the-art infrastructure has clearly helped us emerge as one of the preferred healthcare facilities. We are situated in the heart of the city and easily accessible from across the city, surrounding districts, and states. </p>
+      <p class="padContent"><b>“Medistar is here, this is your healthcare”</b></p>
+    </div>
+    <div id="about1">
+      <h3 class="departmentContentHeading" style="text-align: center;">VISION</h3>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">To constantly strive to promote and advance the health and wellbeing of our patients through excellence and accountability in inpatient care. To be recognized as a top-quality healthcare provider focussed on delivering healthcare with a holistic approach which includes preventive, curative and rehabilitative care.</p>
+      <h3 class="departmentContentHeading" style="text-align: center;">MISSION</h3>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">To deliver superior quality health care with a human touch, in a caring, compassionate, and hygienic environment. To serve and enhance the quality of health of ailing patients through the effective deployment of medical expertise and technology, combined with a focus on affordability, accessibility, and availability.</p>
+      <h3 class="departmentContentHeading" style="text-align: center;">OUR VALUES</h3>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">Quality without compromise; Competence with compassion; Care with concern; Cost-effective medical treatment with consistency and continuous improvement in skills, services, and technology.</p>
+    </div>
+    <div id="about2">
+      <h3>WHY CHOOSE <span style="color: red;background-color: white;padding: 4px;border-radius: 4px;">MEDISTAR</span> ?</h3>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">Every day, people like you choose treatment. But it's more than our experience, top rankings, and leadership in patient care that set us apart. It goes beyond our groundbreaking research and innovative clinical care that provide new therapies years before they become standard in the community. It's because we put all of our focus on you..</p>
+      <div style="margin: auto;width: 50%;text-align: center;">
+        <img class="img1" style="background-color: #074d78" src="./assets/images/dralt.png" alt="">
+        <h4>MEDICAL PROFESSIONALS</h4>
+      </div>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">Medical professionals include doctors, nurses, hospital workers, emergency medical technicians, and trained caregivers.</p>
+      <div style="margin: auto;width: 50%;text-align: center;">
+        <img class="img1" style="background-color: #01c5a2" src="./assets/images/24.png" alt="">
+        <h4>24/7 LIVE SUPPORT</h4>
+      </div>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">The Department of Trauma and Emergency Medicine has refined protocols to deliver the best available care when our patients need it most.</p>
+      <div style="margin: auto;width: 50%;text-align: center;">
+        <img class="img1" style="background-color: #074d78;" src="./assets/images/plus.png" alt="">
+        <h4>EMERGENCY SERVICES</h4>
+      </div>
+      <p style="margin-left: 30%;margin-right: 30%;text-align: center;">The Department of Trauma and Emergency Medicine has refined protocols to deliver the best available care when our patients need it most.</p>
+    </div>
+    <div id="about1">
+      <h3 class="departmentContentHeading" style="text-align: center;">Contact us</h3>
+      <p style="text-align: center;">Email: contact@medistar.com
+      <p style="text-align: center;"> Address: Phagwara, Punjab 144603</p>
+      <hr style="color: rgba(0,0,0,0.5);">
+      <p style="text-align: center;">© 2022 <a style="color: red" href="https://www.knsrinath.com">Naga Srinath Kandula</a>.</p>
+    </div>
+  </div>
+  <!-- tab section -->
+  <!-- Book Appointment -->
+  <div id="bookAppointment" class="tabcontent" style="display: block;">
+    <h3>Book Appointment</h3>
+    <form id="bookAppointmentCont" action="./appointment.php" style="position: fixed; padding: 50px; margin: 0px 68vh; background-color: #fdfdfd;">
+      <table style="padding: 0 0 30px 0;">
+        <tr>
+          <td><label for="patientName">Patient Name:</label></td>
+          <td><input type="text" name="" id="patientName"></td>
+        </tr>
+        <tr>
+          <td><label for="prblm">Select a Disease</label></td>
+          <!-- <td><input type="text" name="" id="prblm"></td> -->
+          <td>
+            
+            <select id="diseaseSelect" style="width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; background-color: #ddd; box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;">
+                <option value="none">Select a Disease</option>
+                <option value="flu">Flu</option>
+                <option value="covid">COVID-19</option>
+                <option value="headache">Headache</option>
+                <option value="back-pain">Back Pain</option>
+            </select>
+          </td>
+        </tr>
+        <div id="doctorInfo">
+            <tr>
+                <td><label for="time">Time Slot:</label></td>
+                <td><p style="width: 100%;padding: 12px 5px;margin: 8px 0;display: inline-block;font-size: 14px;border: 1px solid #ccc;box-sizing: border-box;background-color: #ddd;box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;"><span id="time"></span></p></td>
+            </tr>
+            <tr>
+                <td><label for="dinfo">Doctor Info:</label></td>
+                <td><p style="width: 100%;padding: 12px 5px;margin: 8px 0;display: inline-block;font-size: 14px;border: 1px solid #ccc;box-sizing: border-box;background-color: #ddd;box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;"><span id="doctorName"></span></p></td>
+            </tr>
+            <tr>
+                <td><label for="fee">Fee:</label></td>
+                <td><p style="width: 100%;padding: 12px 5px;margin: 8px 0;display: inline-block;font-size: 14px;border: 1px solid #ccc;box-sizing: border-box;background-color: #ddd;box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;"><span id="fee"></span></p></td>
+            </tr>
+            </div>
+        </table>
+      <button style="position: relative; margin: auto; display: flex;">Book Appointment</button>
+    </form>
+  </div>
+  <!-- Doctors Tab -->
+  <div id="doctors" class="tabcontent" style="background-color: rgba(255,255,255,0.5);">
+    <table style="margin: 5px;">
+      <tr>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Kamal Kishore Pandey</h4>
+            <p class="title">Pulmonologist</p>
+            <p>MBBS, MS</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Dhirendra Singh</h4>
+            <p class="title">Cardiologist</p>
+            <p>MBBS, DA</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Prof Col Shekhar Kashyap</h4>
+            <p class="title">Cardiologist</p>
+            <p>MBBS, DCP</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Sushil Kumar</h4>
+            <p class="title">Gastroenterologist</p>
+            <p>MS (Gold Medalist), MCh</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Ankit Kumar</h4>
+            <p class="title">Pediatrician</p>
+            <p>MBBS, MD, DM</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Naresh Agarwal</h4>
+            <p class="title">Dermatologist</p>
+            <p>MBBS, MS</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Saroj Dubey</h4>
+            <p class="title">Hematologist</p>
+            <p>MBBS, DCP</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Smita Malhotra</h4>
+            <p class="title">Neurologist</p>
+            <p>MD, DNB, FSCAI (USA)</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar.png" alt="John" style="width:100%">
+            <h4>Dr. Jitendra Pal</h4>
+            <p class="title">Ophthalmologist</p>
+            <p>MBBS, MS, DNB</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Lakshmi Prasanna</h4>
+            <p class="title">Psychiatrist</p>
+            <p>MBBS, MS, MCh</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Harika</h4>
+            <p class="title">Dentist</p>
+            <p>MBBS, DA</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+        <td>
+          <div class="card">
+            <img src="assets/images/avatar2.png" alt="John" style="width:100%">
+            <h4>Dr. Kamala Devi</h4>
+            <p class="title">Urologist</p>
+            <p>MBBS, DEM, MRCEM</p>
+            <p><button>Book an Appointment</button></p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!-- My Account -->
+  <div id="myAccount" class="tabcontent">
+    <h3>My Account</h3>
+  </div>
+  <!-- Extra Tabs -->
+  <div>
+    <div id="ortho" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/ortho.jpg" alt="Ortho" style="width:100%;">
+        <div class="centered">department of orthopaedics</div>
+      </div>
+      <div id="about1">
+        <p class="padContent">Orthopaedics today has a much broader application. Orthopaedics (or Orthopaedics Surgery) focuses on the diagnosis, treatment, rehabilitation and prevention of diseases of the musculoskeletal system including those of bones, joints, ligaments, muscles, tendons and nerves. We employ medical, physical rehabilitation and surgery to restore normal function. Our patients are not exclusively treated surgically as up to half of an Orthopaedic Surgeon’s practice may be dedicated to non-operative management.</p>
+        <h4 class="departmentContentHeading">Some Of The Typical Diseases And Conditions Treated By Orthopaedic Surgeons Include:</h4>
+        <ul class="padContent">
+          <li>Fractures and dislocations</li>
+          <li>Torn ligaments, sprains, and strains</li>
+          <li>Tendon injuries, injured muscles, and bursitis</li>
+          <li>Arthritis in the knee or hip requiring joint replacement</li>
+          <li>Arthritis and injuries in the shoulder and elbow</li>
+          <li>Bunions, hammer toes, flat feet, and arthritis in the ankle</li>
+        </ul>
+        <p class="padContent">Here at Physical Therapy and Rehabilitation are highly trained in the evaluation, treatment and prevention of all orthopaedic and joint-related injuries. Our ability to perform a thorough differential diagnosis allows us to utilize the most effective treatment methods. We utilize the most up to date evidence based practices, and our goal is always to facilitate a rapid recovery in the shortest amount of time.</p>
+      </div>
+    </div>
+    <div id="ent" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/ent.jpg" alt="ENT" style="width:100%;">
+        <div class="centered">department of ent</div>
+      </div>
+      <div id="about1">
+        <h4 class="departmentContentHeading">Overview</h4>
+        <p class="padContent">The Department of ENT at <u>Medistar</u> focuses on the treatment of ear, nose, throat, and head and neck conditions in children and adults. The ENT department at <u>Medistar</u> Hospital provides a wide range of services and maintains the highest standard of medical care. Our team is focused on the overall welfare of our patients and their families, aiming to restore the quality of life with the highest degree of professionalism. The Department is renowned across the country that is well equipped with ultra-modern facilities, amenities, and an expert team of ENT Surgeons, Audiologists, and Therapists along with the latest operating microscopes, diagnostic video endoscopes, and an up-to-date audiology lab. The team is considered one of the leading ENT surgical teams in India. The team strongly believes in patient-friendly techniques like minimally invasive or endoscopic procedures which are challenging for the surgeon to perform, but involve minimal or no blood loss, with a reduced but effective stay at the hospital.</p>
+        <h4 class="departmentContentHeading">TREATMENTS WE OFFER</h4>
+        <ul class="twoColList padContent">
+          <li>Vertigo Treatment</li>
+          <li>Tinnus Treatment</li>
+          <li>Cough Treatment</li>
+          <li>Sinus Treatment</li>
+          <li>Ringing in Ears</li>
+          <li>Balance Problems</li>
+          <li>Ear Ache & Ear Discharge</li>
+          <li>Hearing Loss</li>
+          <li>Balance and Dizziness Issues</li>
+          <li>Blocked Nose</li>
+          <li>Poor Sense of Smell</li>
+          <li>Nose Bleeds</li>
+          <li>Deviated Septum</li>
+          <li>Head Aches</li>
+          <li>Problems of Head and Neck Soft Tissue Masses or Lesions</li>
+          <li>Sore Throat</li>
+          <li>Thyroid and Parathyroid Disorders</li>
+          <li>Throat Irritation</li>
+          <li>Change of Voice</li>
+          <li>Breathing Difficulty</li>
+          <li>Sleep breathing disorders</li>
+          <li>Swallowing Difficulty</li>
+          <li>Speech and Swallowing issues</li>
+          <li>Deafness</li>
+          <li>Rhinology</li>
+        </ul>
+        <h4 class="departmentContentHeading">OUR EXPERTISE</h4>
+        <ul class="twoColList padContent">
+          <li>Speech and language services</li>
+          <li>Snooring Surgery</li>
+          <li>Sinus Surgery</li>
+          <li>Rhinoplasty</li>
+          <li>Microscopic Ear surgery</li>
+          <li>Skull base Surgery</li>
+          <li>CSF leak repair</li>
+          <li>Coblation laser-assisted</li>
+          <li>Voice evaluation, speech therapy and microscopic voice box surgery</li>
+          <li>Otoplasty</li>
+          <li>Minimally invasive endoscopic sinus surgery</li>
+          <li>Audiology & Hearing aid</li>
+          <li>Paediatric Otolaryngology</li>
+          <li>Head & Neck Surgery, including surgery for head and neck cancers</li>
+          <li>Facial plastic and reconstructive surgery</li>
+        </ul>
+      </div>
+    </div>
+    <div id="eye" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/eye.jpg" alt="Eye" style="width:100%;">
+        <div class="centered">department of eye clinic</div>
+      </div>
+      <div id="about1">
+        <h4 class="departmentContentHeading">Facilities</h4>
+        <p class="padContent">We have a well-equipped “Out Patient Department” with diagnostic facilities. The OPD functions 6 days a week. Out patient department is fully equipped with Slit Lamp, Keratometer, Applanation Tonometer and Indirect Ophthalmoscope, Fundus Camera, Flurescein Angiography, Humphrey Computerized Field Analyser, A and B Ultrasonographs, OCT, Yag Laser and Argon Green Laser.</p>
+        <h4 class="departmentContentHeading">OPD provides following services</h4>
+        <ul class="padContent">
+          <li>Comprehensive Eye Examination.</li>
+          <li>Computer assisted Refraction.</li>
+          <li>Cataract Services.</li>
+          <li>Lasik Laser & Refractive Services.</li>
+          <li>Vitreo Retina Services.</li>
+          <li>Uvea Services.</li>
+          <li>Cornea Services.</li>
+          <li>Pediatric Ophthalmology Services.</li>
+          <li>Glaucoma Services.</li>
+          <li>Oculoplasty Services.</li>
+          <li>Contact lens Services.</li>
+        </ul>
+        <h4 class="departmentContentHeading">IN PATIENT DEPARTMENT (IPD)</h4>
+        <p class="padContent">The Hospital has fully modular state of art Operation Theatre (First in TRICITY) built according to international standards keeping in view WHO sterilization guidelines. AHU with Hepa filters has been used for the sterilization of the air. OT is equipped with Operating Microscope, Latest Phaco Machines and Vitrectomy Machines apart from the regular surgical equipment. OT is supported by a Central Sterilization Department, adequate Paramedical Staff and Wards for pre and post operative care.</p>
+        <p class="padContent">Dedicated Quality Head and Infection control committee ensures high levels of sterilization standards and smooth functioning of OT. We are proud to announce that we have achieved zero infection rate which is remarkable in operation theatre standards.</p>
+        <p class="padContent">COMPUTERISED RECORD MANAGEMENT.</p>
+        <p class="padContent">SUPPORT SERVICES.</p>
+      </div>
+    </div>
+    <div id="cardio" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/cardio.jpg" alt="Cardiology" style="width:100%;">
+        <div class="centered">department of cardiology</div>
+      </div>
+      <div id="about1">
+        <p class="padContent">The Department of Cardiology at Medistar Hospital offers cutting- edge technology, top specialists, with best practices in non-intrusive, interventional and surgeries and emergency services.Our Heart Institute is fully equipped with the Latest Electrophysiology lab with 3D mapping facility for assessment and removal of different forms of Arrhythmias. We hold best in the state for device implantations like ICDs and CRT.Group of Cardiologists and Cardiovascular specialists ensure predominant results here. The interventional team is accessible round the clock to render assistance and ensure a quicker recovery.</p>
+        <p class="padContent">Medistar Hospital have state-of-the-art infrastructure to support the function and have attracted some of the best intellect and expertise from this field. They all follow the philosophy of excellence and empathy and give their whole in seeing the patient back home with a new heart. The round-the-clock paramedical and support staff is very caring and concerned and intertwines with the patient's family to educate and train them and support them emotionally, whenever required.</p>
+        <h4 class="departmentContentHeading">Non invasive services</h4>
+        <ul class="padContent">
+          <li>ECG</li>
+          <li>Stress ECG / Treadmill test</li>
+          <li>Holter Monitoring (24 hrs & 7 hrs)</li>
+          <li>Event recorders (Invasive, Non invasive)</li>
+          <li>Head up tilt test</li>
+          <li>2D Echo cardiogram</li>
+          <li>3D echocardiogram</li>
+          <li>Transesophageal cardiogram (TEE (2D & 3D))</li>
+          <li>Contrast Echocardiography</li>
+          <li>Perioperative echocardiography</li>
+          <li>Pediatric echocardiography</li>
+          <li>Fetal echocardiography</li>
+          <li>Stress echocardiography</li>
+        </ul>
+        <h4 class="departmentContentHeading">Department of nuclear cardiology</h4>
+        <ul class="padContent">
+          <li>Thallium studies (rest & stress)</li>
+          <li>PET CT of the heart</li>
+        </ul>
+        <h4 class="departmentContentHeading">Department of radiocardiology</h4>
+        <ul class="padContent">
+          <li>Cardiac CT (plain & contrast)</li>
+          <li>CT coronary angiography</li>
+          <li>Cardiac MRI</li>
+        </ul>
+        <h4 class="departmentContentHeading">Invasive Procedures</h4>
+        <ul class="padContent">
+          <li>Right heart and left heart cath study</li>
+          <li>Coronaray Angiography</li>
+          <li>Peripheral Angiography (including renal, abdominal, carotid, lower limbs etc.,)</li>
+          <li>IVUS</li>
+          <li>FFR</li>
+          <li>Electrophysiology (EP) study</li>
+          <li>3D cartomaping</li>
+        </ul>
+        <h4 class="departmentContentHeading">Interventional therapeutic procedures</h4>
+        <ul class="padContent">
+          <li>Coronary angioplasty (PTCA)</li>
+          <li>Coronary angioplasty with stenting</li>
+          <li>Complex coronary interventions (bifurcation, CTA etc.,)</li>
+          <li>Peripheral interventions (renal, cerebral, carotid, and lower limb etc.,)</li>
+          <li>Endovascular stent grafting</li>
+        </ul>
+        <h4 class="departmentContentHeading">Emergency cardiac services</h4>
+        <p class="padContent">Medistar offers acute cardiac emergency care services on 24 X 7 basis on direct supervision of senior cardiologist. Emergency primary Angioplasty services for heart attack victims are available round the clock</p>
+      </div>
+    </div>
+    <div id="xray" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/xray.jpg" alt="X-Ray" style="width:100%;">
+        <div class="centered">department of X-Ray</div>
+      </div>
+      <div id="about1">
+        <h4 class="departmentContentHeading">Introduction</h4>
+        <p class="padContent">Numerous health problems have become a major concern due to end number of reasons. Identifying a medical condition at an early stage is vital as it gives you much more time for treatment and the recovery process. An X-ray test plays a significant role in the life of an individual as it helps identify various abnormalities of the different parts and organs of the body, such as the bones, teeth, lungs, breast heart, abdomen, and more. We, at MEDISTAR Clinic, understand that illnesses and injuries are uncertain and therefore, offer you X-ray services and aim at performing tests that assist in detecting the cause of your health problem. </p>
+        <h4 class="departmentContentHeading">What is an X-ray?</h4>
+        <p class="padContent">An X-ray is a kind of electromagnetic wave or radiation that is used for medical imaging. It is a quick and painless procedure that is performed to create various images of the structures within the body, particularly, the bones. An X-ray test is a very effective way to view the bones and can be used to help detect numerous health conditions such as fractures and infections, arthritis, osteoporosis, tooth infection and decay, lung infections, bone or breast cancer, digestive tract abnormalities, and more.</p>
+        <p class="padContent">The chest X-ray is the most common type of X-ray test that is usually taken from the back to the front and helps reveal various abnormalities that cannot be detected during a physical examination. It provides an image of the organs and structures within the chest that include the heart, lungs, blood vessels and the muscles below the lungs.</p>
+        <p class="padContent">At MEDISTAR, we understand the importance of correct diagnosis for a disease or health issue and therefore, offer you both, non-invasive X-ray services and complete care with a human touch for our patients. This includes an extensive consultation with an expert doctor, who helps in spotting the underlying health issues if any. With the use of state of the art facilities and diagnostic equipment, we assure to provide you with an accurate diagnosis and treatment for the same. With branches all across the country, you can be assured that MEDISTAR Clinic will be there to help you at every stage in your life, no matter where you go.</p>
+      </div>
+    </div>
+    <div id="blood" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/blood.jpg" alt="Blood" style="width:100%;">
+        <div class="centered">department of Blood</div>
+      </div>
+      <div id="about1">
+        <h4 class="departmentContentHeading">Introduction</h4>
+        <p class="padContent">Elevation of blood pressure (BP) to abnormal levels is called hypertension. It is estimated that about one in every three urbanites and one in four rural people suffer from hypertension in India . Even more alarming is the fact that only 50% of people with hypertension are aware of their condition. In some communities, the awareness is as low as 10%.</p>
+        <p class="padContent">At MEDISTAR Speciality Clinic for Blood Pressure, our blood pressure specialists focus on minimising the chances of occurrence or at least delaying the occurrence of blood pressure. For those who are already hypertensive, the aim is to reduce the incidence of related complications.</p>
+        <h4 class="departmentContentHeading">What is Hypertension?</h4>
+        <p class="padContent">Primary Hypertension - This is the most common type of hypertension accounting for more than 95% of cases. The onset of primary hypertension is very gradual and does not have any visible symptoms. The cause of this kind of hypertension is unknown. It occurs as the arteries start getting stiff and kidneys are unable to maintain optimal blood pressure. Primary hypertension develops with age.  </p>
+        <p class="padContent">Secondary Hypertension - In this type of hypertension, the cause of elevation in blood pressure is known. Several diseases such as tumours like pheochromocytoma, adrenal adenoma, arterial diseases like renal artery stenosis and coarctation of aorta can lead to hypertension. In certain cases, treatment of the underlying condition could cure secondary hypertension. Some signs that indicate the presence of secondary hypertension are a sudden worsening of blood pressure in an older person, onset of hypertension at a very young age, or episodic elevation of blood pressure associated with symptoms such as palpitation and sweating. </p>
+        <h4 class="departmentContentHeading">MEDISTAR Support</h4>
+        <p class="padContent">At MEDISTAR Clinic's Specialty Clinic for Blood Pressure treatment, we use an automatic device that monitors and records blood pressure through the day and provides the entire BP profile. This is important as BP levels not lowering during sleep can indicate the risk of paralysis, heart attacks and stroke. We also have an exclusive facility to check blood pressure in the heart which is the true indicator of BP. Our distinguished team of highly skilled specialists in high blood pressure treatment experienced support staff, and qualified technicians leave no stone unturned in providing high-quality treatment for blood pressure.</p>
+      </div>
+    </div>
+    <div id="burn" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/ambulance.gif" alt="Blood" style="width:100%;">
+        <div class="centered">Emergency Services for Burns</div>
+      </div>
+    </div>
+    <div id="accident" class="tabcontent">
+      <div class="tabImgContainer">
+        <img src="./assets/images/ambulance.gif" alt="Burn" style="width:100%;">
+        <div class="centered">Emergency Services for Accidents</div>
+      </div>
+    </div>
+  </div>
+  <!-- Login Form -->
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="./assets/images/avatar2.png" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  <!-- Java Script -->
+  <script src="./script.js"></script>
+  <script>
+    // Dummy data for doctor information
+    const doctorData = {
+        flu: {
+            time: "Monday, 10:00 AM - 12:00 PM",
+            fee: "$100",
+            doctorName: "Dr. Smith"
+        },
+        covid: {
+            time: "Tuesday, 2:00 PM - 4:00 PM",
+            fee: "$150",
+            doctorName: "Dr. Johnson"
+        },
+        headache: {
+            time: "Wednesday, 9:00 AM - 11:00 AM",
+            fee: "$80",
+            doctorName: "Dr. Brown"
+        },
+        'back-pain': {
+            time: "Thursday, 1:00 PM - 3:00 PM",
+            fee: "$120",
+            doctorName: "Dr. White"
+        },
+    };
+
+    // Get the select element and doctor info elements
+    const diseaseSelect = document.getElementById('diseaseSelect');
+    const timeSpan = document.getElementById('time');
+    const feeSpan = document.getElementById('fee');
+    const doctorNameSpan = document.getElementById('doctorName');
+
+    // Add an event listener to the select element
+    diseaseSelect.addEventListener('change', () => {
+        const selectedDisease = diseaseSelect.value;
+        if (selectedDisease !== 'none') {
+            // Update the doctor info based on the selected disease
+            timeSpan.textContent = doctorData[selectedDisease].time;
+            feeSpan.textContent = doctorData[selectedDisease].fee;
+            doctorNameSpan.textContent = doctorData[selectedDisease].doctorName;
+        } else {
+            // Reset the doctor info
+            timeSpan.textContent = '-';
+            feeSpan.textContent = '-';
+            doctorNameSpan.textContent = '-';
+        }
+    });
+</script>
+
+</body>
+</html>
