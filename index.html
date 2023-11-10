@@ -9,13 +9,138 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Inter&family=Open+Sans&family=Poppins&family=Righteous&family=Roboto&family=Staatliches&display=swap" rel="stylesheet">  
+  <style>
+    /* Style for the modal container */
+    .modal {
+      display: none; /* Hide the modal by default */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.66);
+    }
+    
+    /* Style for the modal content */
+    .modal-content {
+      background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      text-align: center;
+      transform: scale(1.1);
+      opacity: 0;
+      animation: fadeIn 0.5s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+    
+    /* Close button style */
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    /* Avatar image style */
+    .avatar {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+    
+    /* Container style for form elements */
+    .container {
+      padding: 16px;
+    }
+    
+    /* Label style */
+    label {
+      font-weight: bold;
+    }
+    
+    /* Input style */
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    /* Button style */
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    /* Cancel button style */
+    .cancelbtn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* Forgot password link style */
+    .psw a {
+      text-decoration: none;
+      color: #2196F3;
+    }
+    
+    /* Style for the "Remember me" checkbox */
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    
+    /* Change the background color on hover for buttons and links */
+    button:hover, .cancelbtn:hover, .psw a:hover {
+      background-color: #45a049;
+    }
+    
+    /* Responsive layout for the modal */
+    @media screen and (max-width: 600px) {
+      .modal-content {
+        width: 100%;
+      }
+    }
+    
+    </style>
 </head>
 <body onload="openTab(event, 'main')">
   <!-- Main Bar -->
   <div class="topnav">
     <a class="logo" href="./index.html">mediSTAR</a>
-    <a onclick="document.getElementById('id01').style.display='block'">Log in/Sign up</a>
-    <marquee behavior="" direction="left"><b>100% fixed price packages | No Cost EMI & Insurance | 15+ year average doctor exp.</b></marquee>
+    <a onclick="document.getElementById('id02').style.display='block'" style="margin: 10px 0;">Sign up</a>
+    <a onclick="document.getElementById('id01').style.display='block'" style="margin: 10px 0;">Log in</a>
+    <marquee behavior="" direction="left" style="width: 160vh; margin: 0; padding: 15px 0;"><b>100% fixed price packages | No Cost EMI & Insurance | 15+ year average doctor exp.</b></marquee>
   </div>
   <!-- Navigation bar -->
   <div class="navbar">
@@ -43,7 +168,7 @@
     </div>
     <a class="tablinks" onclick="openTab(event, 'bookAppointment')"><i class="fa fa-phone icon"></i> Book Appointment</a>
     <a class="tablinks" onclick="openTab(event, 'doctors')"><i class="fa-sharp fa-solid fa-stethoscope icon"></i> Doctors</a>
-    <a style="float: right;" class="tablinks" onclick="openTab(event, 'myAccount')"><i class="fa fa-user icon"></i> My Account</a>
+    <!-- <a style="float: right;" class="tablinks" onclick="openTab(event, 'myAccount')"><i class="fa fa-user icon"></i> My Account</a> -->
   </div>
   <!-- Main About -->
   <div class="tabcontent" id="main">
@@ -265,9 +390,9 @@
     </table>
   </div>
   <!-- My Account -->
-  <div id="myAccount" class="tabcontent">
+  <!-- <div id="myAccount" class="tabcontent">
     <h3>My Account</h3>
-  </div>
+  </div> -->
   <!-- Extra Tabs -->
   <div>
     <div id="ortho" class="tabcontent">
@@ -476,10 +601,43 @@
   </div>
   <!-- Login Form -->
   <div id="id01" class="modal">
-  
     <form class="modal-content animate" action="/action_page.php" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="./assets/images/avatar2.png" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  
+
+      
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <div id="id02" class="modal" style="overflow: hidden;background-color: rgb(0 0 0 / 66%);">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post" style="margin-top: -35px;">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
         <img src="./assets/images/avatar2.png" alt="Avatar" class="avatar">
       </div>
   
@@ -488,16 +646,20 @@
         <input type="text" placeholder="Enter Username" name="uname" required>
   
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+          
+        <label for="cpsw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" id="cpsw" name="cpsw" required>
           
         <button type="submit">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
         </label>
       </div>
-  
+
+      
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div>
     </form>
@@ -505,4 +667,37 @@
   <!-- Java Script -->
   <script src="./script.js"></script>
 </body>
+<script>
+  // JavaScript to display and hide the modal
+  var modal = document.getElementById('id01');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+  </script>
+<script>
+    var password = document.getElementById("psw")
+    , confirm_password = document.getElementById("cpsw");
+  
+  function validatePassword(){
+    if(password.value != confirm_password.value) {
+      confirm_password.setCustomValidity("Passwords Don't Match");
+    } else {
+      confirm_password.setCustomValidity('');
+    }
+  }
+  
+  password.onchange = validatePassword;
+  confirm_password.onkeyup = validatePassword;
+</script>
+<script>
+  // JavaScript to display and hide the modal
+  var modal = document.getElementById('id01');
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+  </script>
 </html>
